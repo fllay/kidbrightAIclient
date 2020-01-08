@@ -1,0 +1,26 @@
+<annotation>
+    <folder>mages</folder>
+    <filename>1570439566378.png</filename>
+    <path>/client/exampleRobot/images/1570439566378.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>500</width>
+        <height>300</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>kk</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>307</xmin>
+            <ymin>289</ymin>
+            <xmax>395</xmax>
+            <ymax>413</ymax>
+        </bndbox>
+    </object>
+</annotation>

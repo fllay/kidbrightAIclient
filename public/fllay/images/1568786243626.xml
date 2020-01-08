@@ -1,0 +1,26 @@
+<annotation>
+    <folder>mages</folder>
+    <filename>1568786243626.png</filename>
+    <path>/client/fllay/images/1568786243626.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>500</width>
+        <height>300</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>box</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>380</xmin>
+            <ymin>225</ymin>
+            <xmax>581</xmax>
+            <ymax>413</ymax>
+        </bndbox>
+    </object>
+</annotation>

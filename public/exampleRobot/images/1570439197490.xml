@@ -1,0 +1,26 @@
+<annotation>
+    <folder>mages</folder>
+    <filename>1570439197490.png</filename>
+    <path>/client/exampleRobot/images/1570439197490.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>500</width>
+        <height>300</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>tommad</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>373</xmin>
+            <ymin>264</ymin>
+            <xmax>445</xmax>
+            <ymax>354</ymax>
+        </bndbox>
+    </object>
+</annotation>

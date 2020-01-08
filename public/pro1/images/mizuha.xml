@@ -1,0 +1,14 @@
+<annotation>
+    <folder>images</folder>
+    <filename>mizuha.jpg</filename>
+    <path>/home/mendel/nodejs/kbclient/client/pro1/images/mizuha.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>1920</width>
+        <height>1080</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+</annotation>

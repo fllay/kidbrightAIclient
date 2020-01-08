@@ -1,0 +1,133 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="aXcx8[cGVA5eV5;*_~wz">aa</variable>
+    <variable id="6P`]VJjCV*C9wqO@]vfL">i</variable>
+    <variable id="tTN09R`QS}1`6z0(b93g">label</variable>
+  </variables>
+  <block type="init_ros_node" id=":U.=c6Tq6JKva6XO8.Z*" x="214" y="67">
+    <next>
+      <block type="start_object_detector" id="Y|3o*yUWtQh2ix$A)^V}">
+        <next>
+          <block type="rospy_loop" id="qiFAO9|%x+M^1{!efTp;">
+            <statement name="DO">
+              <block type="get_objects" id="1`n{_aBM_}ENG)3a:Uya">
+                <value name="Objs">
+                  <block type="variables_get" id="SaLQT/Cr2rkIyI^ch^fO">
+                    <field name="VAR" id="aXcx8[cGVA5eV5;*_~wz">aa</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_forEach" id="NLI4vOD4vny|+$Z{NK$$">
+                    <field name="VAR" id="6P`]VJjCV*C9wqO@]vfL">i</field>
+                    <value name="LIST">
+                      <block type="variables_get" id="/Ul~}Az3XF8HXGgXvU=A">
+                        <field name="VAR" id="aXcx8[cGVA5eV5;*_~wz">aa</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="variables_set" id="vD%7PQIaN5tg|bJ`B:dC">
+                        <field name="VAR" id="tTN09R`QS}1`6z0(b93g">label</field>
+                        <value name="VALUE">
+                          <block type="get_object_attr" id="fbj7eb-0b!jfi4I:^FT*">
+                            <field name="DATA_FIELD">label</field>
+                            <value name="VAR">
+                              <block type="variables_get" id="H{oQ0tm^rdum;?)nP~h`">
+                                <field name="VAR" id="6P`]VJjCV*C9wqO@]vfL">i</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="n7ya=6Seb=nQk3V}p7Q3">
+                            <value name="IF0">
+                              <block type="logic_compare" id="g_KFrv`+@{^Z%UJIF6IQ">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="K_4Tx[A=#55nE9AqKNTI">
+                                    <field name="VAR" id="tTN09R`QS}1`6z0(b93g">label</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="e;/VrrYa9K=t?ua%s|CD">
+                                    <field name="TEXT">totoro</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="controls_if" id="k#$3+NAZ]@.DwlyY]dVE">
+                                <mutation elseif="1" else="1"/>
+                                <value name="IF0">
+                                  <block type="logic_compare" id="poq[npG~HK2B_WPakK0f">
+                                    <field name="OP">GT</field>
+                                    <value name="A">
+                                      <block type="get_object_attr" id="`j@wgw4DE/ln}Wl]-MrA">
+                                        <field name="DATA_FIELD">cx</field>
+                                        <value name="VAR">
+                                          <block type="variables_get" id="nSreGpLwBQPd2:XFR]=6">
+                                            <field name="VAR" id="6P`]VJjCV*C9wqO@]vfL">i</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="^*zE[Eal{),NtrYjs1mA">
+                                        <field name="NUM">330</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="set_velocity" id="(!_j-Mv*Dx3N_Y2R[b#*">
+                                    <field name="LINEAR">0.1</field>
+                                    <field name="ANGULAR">0.4</field>
+                                  </block>
+                                </statement>
+                                <value name="IF1">
+                                  <block type="logic_compare" id="+^%sqza,d~c|#`SOL^ne">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="get_object_attr" id="+B#Me!|Iv).ak%O!mj[O">
+                                        <field name="DATA_FIELD">cx</field>
+                                        <value name="VAR">
+                                          <block type="variables_get" id="*moAF/GAE]=p*pj6/}Q1">
+                                            <field name="VAR" id="6P`]VJjCV*C9wqO@]vfL">i</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="?c[8%g8!L0)W(T;YahTo">
+                                        <field name="NUM">310</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO1">
+                                  <block type="set_velocity" id="9+$:2ET#Uq[Q_*+v2,BB">
+                                    <field name="LINEAR">0.1</field>
+                                    <field name="ANGULAR">-0.4</field>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="set_velocity" id="TrffHX+!|81vxG!@]0~`">
+                                    <field name="LINEAR">0</field>
+                                    <field name="ANGULAR">0</field>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
