@@ -17,7 +17,7 @@
     "bootstrap-vue": "^2.0.0-rc.25",
     "core-js": "^2.6.5",
     "jcrop": "^3.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-select-areas": "^0.1.0",
     "node-blockly": "^1.2.2",
     "rx-js": "0.0.0",
